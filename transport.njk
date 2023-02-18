@@ -1,0 +1,12 @@
+<div>
+{% if config.userId %}
+<span>Stop {{ config.transportInfo.stopNumber }}</span>
+<ul style="list-style: none;">
+{% for time in config.transportInfo.arrivalTimes %}
+    <li> {{ time.busNumber }}: {{ time.scheduledArrival }} </li>
+{% endfor %}
+</ul>
+{% else %}
+    <span>Please log in to see transport data.</span>
+{% endif %}
+</div>
