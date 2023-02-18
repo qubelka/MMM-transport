@@ -9,7 +9,30 @@ Group work: microservice application based on MagicMirror
 4. Public transport module deployed to cloud (me)
 
 
-The module draft with hard-coded data is based on built-in modules code for MagicMirror and
+The module draft wis based on built-in modules code for MagicMirror and
 [roramirez template](https://github.com/roramirez/MagicMirror-Module-Template). 
 
-Project state: in progress. 
+Project state (transport module): done. 
+
+## Project setup
+![Transport information when no user authenticated](/.github/setup.jpg?raw=true)
+(Picture made by Kalle Paananen)
+
+
+In this project we omit the user registration and assume that there are 4 registered users who have specified their preferences. 
+
+The transport module shows bus arrival times for a specific bus stop. The module fetches bus information from the mocked API which runs in [replit](https://replit.com). The code for mock is in the file `mockApi.js`. 
+
+![Transport information when no user authenticated](/.github/screenshot1.png?raw=true)
+![Transport information for the authenticated user](/.github/screenshot2.png?raw=true)
+
+## Configuration
+The transport module can be connected to the MagicMirror by adding the following configuration to the `config/config.js`: 
+
+```javascript
+{
+	module: "mmm-transport",
+	position: "top_left",
+	header: "Bus arrival times"
+}
+```
