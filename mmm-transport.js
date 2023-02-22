@@ -68,7 +68,7 @@ Module.register("mmm-transport", {
 		}
 		this.updateDom();
 	},
-	socketNotificationReceived: function (notification, payload) {
+	notificationReceived: function (notification, payload) {
         var self = this;
 		switch (notification) {
 			case "PERSON_RECOGNIZED": 
