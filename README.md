@@ -1,6 +1,8 @@
 # MMM-transport
 Code for programming assignment 2 (Cloud and Edge Computing course) 
 
+### [Final project demo on youtube (Personalized MagicMirror)](https://www.youtube.com/watch?v=p1qFni5OQ54)
+
 Group work: microservice application based on MagicMirror
 
 1. Face recognition module (https://github.com/Linzh7/FaceRecognition-MagicMirror)
